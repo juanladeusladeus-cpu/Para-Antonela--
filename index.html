@@ -14,30 +14,31 @@
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--night);font-family:Montserrat,Arial,sans-serif}button{font:inherit}
 .welcome{min-height:100svh;display:grid;place-items:center;position:relative;overflow:hidden;padding:32px 20px;text-align:center;color:white;background:radial-gradient(ellipse at 50% 42%,#70506a 0%,#39283f 48%,#171722 100%)}
 .welcome:before,.welcome:after{content:"";position:absolute;width:min(78vw,520px);aspect-ratio:1;border:1px solid #e8cb8a35;border-radius:50%;pointer-events:none;animation:rotate 35s linear infinite}.welcome:after{width:min(95vw,670px);animation-direction:reverse;border-color:#e8cb8a20}
-@keyframes rotate{to{transform:rotate(360deg)}}.welcome-inner{position:relative;z-index:1;max-width:680px}.eyebrow,.mini{font-size:.67rem;letter-spacing:.3em;text-transform:uppercase}.eyebrow{color:var(--gold)}
+@keyframes rotate{to{transform:rotate(360deg)}}.welcome-inner{position:relative;z-index:1;max-width:680px}.sparkle{position:absolute;color:#f2dca8;opacity:.65;animation:twinkle 3s ease-in-out infinite alternate}.sparkle.one{top:13%;left:13%;font-size:1.3rem}.sparkle.two{right:14%;top:22%;font-size:1.7rem;animation-delay:1s}.sparkle.three{left:18%;bottom:16%;font-size:1.1rem;animation-delay:1.7s}@keyframes twinkle{to{opacity:1;transform:scale(1.25)}}.welcome-tag{display:inline-block;margin:0 0 22px;padding:8px 15px;border:1px solid #e8cb8a55;border-radius:99px;color:#f0dfbd;font-size:.62rem;letter-spacing:.18em;text-transform:uppercase}.eyebrow,.mini{font-size:.67rem;letter-spacing:.3em;text-transform:uppercase}.eyebrow{color:var(--gold)}
 .diamond{display:block;margin:22px auto 8px;color:#f5dfad;font-size:4rem;filter:drop-shadow(0 0 18px #f4dca7aa);animation:glow 3s ease-in-out infinite alternate}@keyframes glow{to{filter:drop-shadow(0 0 32px #f4dca7)}}
 h1,h2,h3,.quote,.message{font-family:"Cormorant Garamond",Georgia,serif}.welcome h1{margin:18px 0;color:#fff8f2;font-size:clamp(4rem,12vw,7rem);font-weight:500;line-height:.88}.welcome p{max-width:470px;margin:25px auto 30px;color:#eee2eb;font-size:.9rem;line-height:1.9}
 .btn{padding:15px 29px;border:1px solid var(--gold);border-radius:999px;background:linear-gradient(135deg,#f4e3b9,#d8b875);color:#302337;box-shadow:0 8px 24px #0002;cursor:pointer;font-size:.7rem;font-weight:600;letter-spacing:.1em;transition:transform .25s,box-shadow .25s}.btn:hover{transform:translateY(-3px);box-shadow:0 13px 30px #0003}.btn:focus-visible,a:focus-visible{outline:3px solid var(--rose);outline-offset:4px}
 .hidden{display:none!important}.site{animation:appear .8s ease}@keyframes appear{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
 header{position:sticky;top:0;z-index:5;display:flex;align-items:center;justify-content:space-between;padding:19px 7vw;border-bottom:1px solid #eadfe4;background:#fffdfbef;backdrop-filter:blur(12px)}.brand{font-family:"Cormorant Garamond",Georgia,serif;font-size:1.65rem}.brand span{color:#b77b91}nav a{margin-left:18px;color:var(--muted);font-size:.67rem;letter-spacing:.1em;text-decoration:none}nav a:hover{color:#a36c82}
-.hero{position:relative;overflow:hidden;padding:clamp(78px,10vw,125px) 22px 95px;background:radial-gradient(ellipse at 50% 0%,#f0dce4,#fff9f5 70%);text-align:center}.mini{color:#a87588}.hero h2{max-width:900px;margin:22px auto;font-size:clamp(3rem,8vw,5.8rem);font-weight:500;line-height:.95}.quote{max-width:720px;margin:0 auto 25px;color:#76566b;font-size:clamp(1.5rem,3.4vw,2.15rem);font-style:italic;line-height:1.35}.small{max-width:570px;margin:auto;color:#827681;font-size:.8rem;line-height:1.9}.ornament{margin-top:35px;color:#c58da0;letter-spacing:1em}
+.hero{position:relative;overflow:hidden;padding:clamp(78px,10vw,125px) 22px 95px;background:radial-gradient(ellipse at 50% 0%,#f0dce4,#fff9f5 70%);text-align:center}.mini{color:#a87588}.hero h2{max-width:900px;margin:22px auto;font-size:clamp(3rem,8vw,5.8rem);font-weight:500;line-height:.95}.quote{max-width:720px;margin:0 auto 25px;color:#76566b;font-size:clamp(1.5rem,3.4vw,2.15rem);font-style:italic;line-height:1.35}.small{max-width:570px;margin:auto;color:#827681;font-size:.8rem;line-height:1.9}.ornament{margin-top:35px;color:#c58da0;letter-spacing:1em}.memory-strip{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;max-width:900px;margin:48px auto 0}.memory-card{padding:23px 16px;border:1px solid #ead9df;background:#fffaf9;box-shadow:0 12px 35px #4a31400a}.memory-card .symbol{display:block;margin-bottom:10px;color:#b77b91;font-size:1.5rem}.memory-card strong{display:block;margin-bottom:7px;color:#513c50;font-family:"Cormorant Garamond",Georgia,serif;font-size:1.35rem}.memory-card span{color:#817480;font-size:.72rem;line-height:1.7}
 section{padding:80px 7vw}.section-title{margin:0 0 12px;text-align:center;font-size:clamp(2.5rem,5vw,3.3rem);font-weight:500}.section-sub{max-width:550px;margin:0 auto 38px;color:var(--muted);font-size:.78rem;line-height:1.8;text-align:center}
-.letter-wrap{background:linear-gradient(135deg,#f5e9ed,#f9f0ef)}.letter{position:relative;max-width:780px;margin:auto;padding:clamp(30px,7vw,72px);border:1px solid #ead9df;background:#fffefd;box-shadow:0 22px 65px #4a314012}.letter:before{content:"♡";position:absolute;top:15px;right:28px;color:#d7a5b4;font-size:2rem}.letter:after{content:"";position:absolute;inset:10px;border:1px solid #ead9df;pointer-events:none}.letter h3{position:relative;z-index:1;margin:0 0 24px;color:var(--plum);font-size:2.55rem;font-weight:500}.letter p{position:relative;z-index:1;color:#625864;font-size:.9rem;line-height:2.05}.signature{margin-top:30px;color:#9b647b!important;font-family:"Cormorant Garamond",Georgia,serif;font-size:1.8rem!important;font-style:italic}
-.future{padding-top:95px;padding-bottom:100px;background:linear-gradient(145deg,#21182b,#35243b);color:white;text-align:center}.future .section-title{color:#f6e5d1}.future .diamond{font-size:3rem}.future blockquote{max-width:880px;margin:25px auto;color:#f4e8dc;font-family:"Cormorant Garamond",Georgia,serif;font-size:clamp(2rem,4.5vw,3.2rem);line-height:1.3}.future p{max-width:630px;margin:22px auto 0;color:#d7c9d6;font-size:.82rem;line-height:1.95}
-.surprise{background:#fffaf7;text-align:center}.surprise-card{max-width:680px;margin:auto;padding:clamp(30px,6vw,50px) 25px;border:1px solid #ead6dd;border-radius:5px;background:white;box-shadow:0 14px 45px #4a31400b}.message{max-width:540px;margin:25px auto 0;color:#77566c;font-size:1.8rem;line-height:1.5}
+.letter-wrap{background:linear-gradient(135deg,#f5e9ed,#f9f0ef)}.letter-label{margin-bottom:18px;color:#b17a8d;font-size:.62rem;letter-spacing:.22em;text-transform:uppercase}.letter .divider{width:58px;height:1px;margin:24px 0;background:#d9a6b5}.letter{position:relative;max-width:780px;margin:auto;padding:clamp(30px,7vw,72px);border:1px solid #ead9df;background:#fffefd;box-shadow:0 22px 65px #4a314012}.letter:before{content:"♡";position:absolute;top:15px;right:28px;color:#d7a5b4;font-size:2rem}.letter:after{content:"";position:absolute;inset:10px;border:1px solid #ead9df;pointer-events:none}.letter h3{position:relative;z-index:1;margin:0 0 24px;color:var(--plum);font-size:2.55rem;font-weight:500}.letter p{position:relative;z-index:1;color:#625864;font-size:.9rem;line-height:2.05}.signature{margin-top:30px;color:#9b647b!important;font-family:"Cormorant Garamond",Georgia,serif;font-size:1.8rem!important;font-style:italic}
+.future{padding-top:95px;padding-bottom:100px;background:linear-gradient(145deg,#21182b,#35243b);color:white;text-align:center}.future .section-title{color:#f6e5d1}.future .diamond{font-size:3rem}.future blockquote{max-width:880px;margin:25px auto;color:#f4e8dc;font-family:"Cormorant Garamond",Georgia,serif;font-size:clamp(2rem,4.5vw,3.2rem);line-height:1.3}.future .future-mark{display:inline-block;margin:8px 0 0;padding:9px 17px;border:1px solid #e8cb8a55;border-radius:99px;color:#e8cb8a;font-size:.62rem;letter-spacing:.18em;text-transform:uppercase}.future p{max-width:630px;margin:22px auto 0;color:#d7c9d6;font-size:.82rem;line-height:1.95}
+.moments{background:#fbf3f1}.moments-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;max-width:850px;margin:auto}.moment{padding:26px;border:1px solid #ead9df;background:#fffdfb;text-align:center}.moment .symbol{display:block;color:#b77b91;font-size:1.7rem;margin-bottom:10px}.moment h3{margin:0 0 8px;color:#513c50;font-size:1.55rem;font-weight:500}.moment p{margin:0;color:#817480;font-size:.76rem;line-height:1.8}.surprise{background:#fffaf7;text-align:center}.surprise-card{max-width:680px;margin:auto;padding:clamp(30px,6vw,50px) 25px;border:1px solid #ead6dd;border-radius:5px;background:white;box-shadow:0 14px 45px #4a31400b}.message{max-width:540px;margin:25px auto 0;color:#77566c;font-size:1.8rem;line-height:1.5}
 footer{padding:28px 15px;background:#f4e8ed;color:#8b7885;font-size:.67rem;letter-spacing:.08em;text-align:center}
-@media(max-width:650px){header{padding:17px 5vw}nav a{margin-left:8px;font-size:.59rem}section{padding:62px 6vw}.hero{padding:78px 20px 70px}.letter h3{font-size:2.15rem}}
+@media(max-width:650px){.memory-strip{grid-template-columns:1fr;max-width:420px}.moments-grid{grid-template-columns:1fr}header{padding:17px 5vw}nav a{margin-left:8px;font-size:.59rem}section{padding:62px 6vw}.hero{padding:78px 20px 70px}.letter h3{font-size:2.15rem}}
 @media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;scroll-behavior:auto!important;transition:none!important}}
 </style>
 </head>
 <body>
 <main class="welcome" id="welcome">
+  <span class="sparkle one" aria-hidden="true">✦</span><span class="sparkle two" aria-hidden="true">✧</span><span class="sparkle three" aria-hidden="true">✦</span>
   <div class="welcome-inner">
     <div class="eyebrow">Un regalo hecho con cariño</div>
     <span class="diamond" aria-hidden="true">✧</span>
     <h1>Para<br>Antonela</h1>
     <p>Hay personas que tienen un lugar especial en nuestro corazón. Esta pequeña página es para recordarte lo mucho que te quiero y lo orgulloso que estoy de ti.</p>
-    <button class="btn" id="openBtn">ABRIR TU REGALO&nbsp; ♡</button>
+    <div class="welcome-tag">Con cariño, de tu primo</div><br><button class="btn" id="openBtn">ABRIR TU REGALO&nbsp; ♡</button>
   </div>
 </main>
 <div class="site hidden" id="site">
@@ -51,14 +52,21 @@ footer{padding:28px 15px;background:#f4e8ed;color:#8b7885;font-size:.67rem;lette
     <p class="quote">«Eres un diamante que siempre va a brillar, incluso en la oscuridad».</p>
     <p class="small">Antonela, nunca olvides lo valiosa que eres. Tienes una luz propia, una fuerza enorme y un mundo lleno de cosas bonitas por descubrir.</p>
     <div class="ornament" aria-hidden="true">✧ ♡ ✧</div>
+    <div class="memory-strip">
+      <div class="memory-card"><span class="symbol">♡</span><strong>Siempre querida</strong><span>La distancia no cambia el cariño.</span></div>
+      <div class="memory-card"><span class="symbol">✧</span><strong>Siempre capaz</strong><span>Tienes todo para alcanzar tus sueños.</span></div>
+      <div class="memory-card"><span class="symbol">💎</span><strong>Siempre brillante</strong><span>Tu luz es única y nadie puede apagarla.</span></div>
+    </div>
   </section>
   <section class="letter-wrap" id="carta">
     <article class="letter">
+      <div class="letter-label">Unas palabras que quiero que guardes</div>
       <h3>Una carta para ti, Antonela</h3>
       <p>Quiero que sepas lo mucho que te quiero. Aunque no nos veamos tan seguido como quisiera, siempre estás presente y ocupas un lugar muy especial en mi corazón.</p>
       <p>Para mí eres más que mi prima: te veo como una hermanita pequeña a la que quiero cuidar, apoyar y ver crecer. Siempre voy a desear lo mejor para ti y voy a estar orgulloso de cada paso que des.</p>
       <p>Nunca dudes de lo capaz que eres. Tienes todo para aprender, cumplir tus sueños y llegar tan lejos como te lo propongas. No permitas que un día difícil te haga olvidar todo lo que vales.</p>
       <p>Aunque a veces la distancia no nos permita compartir tantos momentos, quiero que recuerdes que puedes contar conmigo. Siempre voy a querer verte feliz, tranquila y cumpliendo tus sueños.</p>
+      <div class="divider"></div>
       <p class="signature">Con muchísimo cariño, tu primo. ♡</p>
     </article>
   </section>
@@ -66,7 +74,18 @@ footer{padding:28px 15px;background:#f4e8ed;color:#8b7885;font-size:.67rem;lette
     <span class="diamond" aria-hidden="true">✧</span>
     <h2 class="section-title">Un mensaje para tu futuro</h2>
     <blockquote>«Eres un diamante que siempre va a brillar, incluso en la oscuridad».</blockquote>
+    <div class="future-mark">Para que nunca lo olvides</div>
     <p>Habrá días fáciles y otros que te pondrán a prueba, pero nunca olvides tu valor. Sigue aprendiendo, creyendo en ti y caminando hacia tus sueños. No necesitas ser perfecta para ser increíble: ya tienes algo único dentro de ti. Estoy orgulloso de ti, Antonela.</p>
+  </section>
+  <section class="moments">
+    <h2 class="section-title">Cosas que quiero para ti</h2>
+    <p class="section-sub">Porque mereces una vida llena de momentos bonitos.</p>
+    <div class="moments-grid">
+      <article class="moment"><span class="symbol">☼</span><h3>Que nunca dejes de soñar</h3><p>Que cada meta te acerque a la persona que quieres llegar a ser.</p></article>
+      <article class="moment"><span class="symbol">♡</span><h3>Que siempre te quieran bien</h3><p>Que estés rodeada de personas que respeten tu corazón y celebren tus logros.</p></article>
+      <article class="moment"><span class="symbol">✧</span><h3>Que confíes en ti</h3><p>Que recuerdes todo lo que eres capaz de hacer, incluso cuando tengas dudas.</p></article>
+      <article class="moment"><span class="symbol">💎</span><h3>Que sigas brillando</h3><p>A tu manera, a tu ritmo y sin dejar de ser tú misma.</p></article>
+    </div>
   </section>
   <section class="surprise">
     <h2 class="section-title">Una pequeña sorpresa</h2>
